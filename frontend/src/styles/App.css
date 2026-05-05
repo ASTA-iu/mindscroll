@@ -1,0 +1,67 @@
+.App {
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+main,
+.container {
+  width: min(100%, 920px);
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+}
+
+h3 {
+  font-size: clamp(1.06rem, 2.2vw, 1.25rem);
+}
+
+p {
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.mt-3 {
+  margin-top: 24px;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
