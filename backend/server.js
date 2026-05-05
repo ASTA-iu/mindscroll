@@ -15,7 +15,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 app.use('/uploads', express.static('uploads'));
 
 // Database Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://hardik:<123123123>@cluster0.yddasfx.mongodb.net/?appName=Cluster0')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://hardik:<123123123123>@cluster0.yddasfx.mongodb.net/?appName=Cluster0')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log('MongoDB connection error:', err));
 
