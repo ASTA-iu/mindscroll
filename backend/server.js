@@ -6,8 +6,14 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
+const allowedOrigins = [
+  'http://localhost:3000',           // Local development
+  'https://mind-scroll.netlify.app',  // Production
+  process.env.CORS_ORIGIN             // From env variable
+].filter(Boolean);
+
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  origin: allowedOrigins,
   credentials: true
 }));
 app.use(express.json({ limit: '50mb' }));
